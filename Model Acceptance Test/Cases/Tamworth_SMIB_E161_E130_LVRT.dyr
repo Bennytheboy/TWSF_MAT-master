@@ -1,0 +1,131 @@
+969 'USRMDL'  1  'PLBVFU1'   1  1  3  4  3  6
+      1   0   'F3'
+      132.0   50.0   0.0   0.0  /
+/
+100 'USRMDL' 1 'SMAPPC130' 4 0 55 150 20 70 106 107 -1 1
+                          0 0 0 0 0 0 0 0 0 0
+                          0 0 0 0 0 0 0 0 0 0
+                          0 0 0 0 0 0 0 0 0 0
+                          0 0 0 0 0 0 0 0 0 0
+                          0 0 0 0 0 0 0 0 0 0
+                          0
+                          2.0
+                          0.0 0.5 0.04 0.0
+                          0.0 0.5 0.04 0.0
+                          0.0 1.0123 0.0 0.0502 0.0
+                          0.1 1.0 0.04 0.0 0.9
+                          0.04 0.04 -1.0 1.0
+                          0.82 0.0 1.17 0.0 0.1 0.0
+                          0.0 1.0 0.04 0.0 0.1
+                          0.0 50.16
+                          1.0 0.015 0.00 0.312 0.02 0.0
+                          0.04 0.12 0.0
+                          50.0 50.15 60.0 60.0 60.0 60.0 60.0 60.0
+                          1.0 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 1.0 1.0 0.0 1.0 1.0
+                          0.0
+                          0.0 0.0
+                          0.8 0.9 0.95 0.99 1.01 1.05 1.1 1.2
+                          0.5 0.4 0.2 0.0 0.0 -0.3 -0.5 -0.6
+                          -0.5119 0.5119
+                          -0.5119 0.5119
+                          0.0 1.0 1.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.05
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0/
+/                         CtlMod
+/                         KP_PF KI_PF PFXdcrTm PFDB
+/                         KP_Vol KI_Vol (needs to be tuned depending on grid impedance) VolXdcrTm VolDB
+/                         PFNomTot VolNomTot QNomTotHyb VolDiff HybCtlTun
+/                         KP_P KI_P PXdcrTm PDB PNomTot
+/                         QCommTm PCommTm QSptLimNeg QSptLimPos
+/                         FRTThrVolNomMin Reserved FRTThrVolNomMax Reserved FRTHldTm Reserved
+/                         KP_Q KI_Q QXdcrTm QDB QNomTot
+/                         PRefTot QRefTot
+/                         WCtlHzMod PHzStr PHzStop PWGra HzFltTm WCtlHzDrgIndEna
+/                         PNomTotGraMin PNomTotGraMax FSCFlag
+/                         FD_IPXArr_0 FD_IPXArr_1 FD_IPXArr_2 FD_IPXArr_3 ... FD_IPXArr_7
+/                         FD_IPYArr_0 FD_IPYArr_1 FD_IPYArr_2 FD_IPYArr_3 ... FD_IPYArr_7
+/                         RRCFlag FallRateMax RiseRateMax PDiffMin PSuppMax PPVChargeMax
+/                         Reserved 
+/                         PPltCtl QPltCtl
+/                         QV_QSXArr_0 QV_QSXArr_1 QV_QSXArr_2 QV_QSXArr_3 ... QV_QSXArr_7
+/                         QV_QSYArr_0 QV_QSYArr_1 QV_QSYArr_2 QV_QSYArr_3 ... QV_QSYArr_7
+/                         QLimNeg QLimPos
+/                         VDroopQLimNeg VDroopQLimPos
+/                         PSptLimMin PSptLimMax WCtlHzWGraUp Reserved Reserved Reserved
+/                         QP_NegQXArr_0 QP_NegQXArr_1 QP_NegQXArr_2 QP_NegQXArr_3 ... QP_NegQXArr_7
+/                         QP_NegQYArr_0 QP_NegQYArr_1 QP_NegQYArr_2 QP_NegQYArr_3 ... QP_NegQYArr_7
+/                         QP_PosQXArr_0 QP_PosQXArr_1 QP_PosQXArr_2 QP_PosQXArr_3 ... QP_PosQXArr_7
+/                         QP_PosQYArr_0 QP_PosQYArr_1 QP_PosQYArr_2 QP_PosQYArr_3 ... QP_PosQYArr_7
+/                         QPEna QPWFltTm
+/                         Reserved Reserved Reserved Reserved Reserved Reserved
+/                         Reserved Reserved Reserved Reserved Reserved Reserved Reserved
+/                         Reserved Reserved Reserved Reserved Reserved Reserved Reserved
+/
+
+100 'USRMDL' 1 'SMASC161' 1 1 0 160 40 200
+                          1.0 0.8587 0.0 0.8 1.0 1.0 1.0 0.0 0.3
+                          1.0 0.0 5.0 0.5 2.0
+                          0.0 0.9 0.5 1.0 0.9 0.9
+                          0.0 0.15 0.05 0.2
+                          1.0 2.0
+                          2.0 5.0 5.0 5.0
+                          0.185 0.165 0.15 0.13 10.0 0.0
+                          0.01 0.0 20.0 0.05 1.0 0.3 0.75
+                          0.0 0.0 0.0
+                          1.35 1.00 1.35 1.00 1.3 1.00 1.2 3.0 1.15 20.0
+                          0.8 5.0 0.4 2.0 0.0 2.0 0.0 2.0 0.0 2.0
+                          55.0 60.0 55.0 60.0 55.0 60.0 55.0 60.0 55.0 60.0 55.0 60.0
+                          45.0 60.0 45.0 60.0 45.0 60.0 45.0 60.0 45.0 60.0 45.0 60.0
+                          20.0 1.0 50.0 30.0 0.0 0.0 5.0 0.3
+                          0.0 0.0 1.0 0.0
+                          0.0 360.0 0.5 0.01 0.05 0.0 0.5 1.0
+                          1.0 1.0
+                          0.0 0.6
+                          0.5 2.0 2.0 0.0 0.0
+                          1.0
+                          0.0 0.945 1.0 1.055 2.0
+                          5.0 5.0 5.0 5.0 5.0 5.0
+                          0.01 1.0
+                          1.0
+                          0.0
+                          1.0 0.5 0.9 1.1
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0
+                          0.0 0.0 0.0 0.0 0.0 0.0 0.0/
+/                         PPrim PWNom QVArNom PFLim PFPF PFPFExt QVArMod QoDEna QoDQMax
+/                         VArCtlVol_Volref VArCtlVol_VolDB VArCtlVol_VArGra VArCtlVol_VArMax VArCtlVol_VArTm
+/                         PFPFExtStr PFPFStr PFWStr PFPFExtStop PFPFStop PFWStop
+/                         WCtlHzMod PHzStr PHzStop PWGra
+/                         WGra VArGra
+/                         FRTMod FRTArGraNom FRTArGraNomHi FRTArGraNomLo
+/                         FRTDbVolMax FRTDbVolMaxHyst FRTDbVolMin FRTDbVolMinHyst FRT_AmpDGra Reserved
+/                         VArCmdFilTm FRT_VolFilMod FRT_VolDFilTm FRT_WaitTm FRT_AmpQGra FRTSpkMtgLo FRTSpkMtgHi
+/                         Reserved Reserved Reserved
+/                         VCtl_Hi5Lim VCtl_Hi5LimTm ... VCtl_Hi1Lim VCtl_Hi1LimTm
+/                         VCtl_Lo1Lim VCtl_Lo1LimTm ... VCtl_Lo5Limm VCtl_Lo5LimTm
+/                         HzCtl_Hi6Lim HzCtl_Hi6LimTm ... HzCtl_Hi1Lim HzCtl_Hi1LimTm
+/                         HzCtl_Lo1Lim HzCtl_Lo1LimTm ... HzCtl_Lo6Lim HzCtl_Lo6LimTm
+/                         KPLL1 PLLFlag KPPLL2 KIPLL2 HzFltTm PLLFlag2 KPPLL3 KIPLL3
+/                         Reserved Reserved GenTrpFlag PPrioEna
+/                         SMASCSFlag DisChargeTm SOCIni KP_C KI_C CDB CNom FSCScale
+/                         ChargePMax ChargePMin
+/                         MGCFlag QVArscale
+/                         VREps FRT_AmpDLim FRT_AmpQLim Reserved Reserved
+/                         GriMngInvVArMod
+/                         VArCtlVolLoVolRef3 VArCtlVolLoVolRef2 VArCtlVolLoVolRef1HiVolRef1 VArCtlVolHiVolRef2 VArCtlVolHiVolRef3
+/                         VArCtlVolLoGra3 VArCtlVolLoGra2 VArCtlVolLoGra1
+/                         VArCtlVolHiGra1 VArCtlVolHiGra2 VArCtlVolHiGra3
+/                         VArCtlVolVArSptFilTm VolNomSpt
+/                         Frt_AmpQFilTm
+/                         IniSchemeFlag
+/                         VArCtlVolVolNomSptMod VArCtlVolVolFilTm VArCtlVolVolMin VArCtlVolVolMax
+/                         Reserved Reserved Reserved Reserved Reserved Reserved Reserved
+/                         Reserved Reserved Reserved Reserved Reserved Reserved Reserved
+/                         Reserved Reserved Reserved Reserved Reserved Reserved Reserved
