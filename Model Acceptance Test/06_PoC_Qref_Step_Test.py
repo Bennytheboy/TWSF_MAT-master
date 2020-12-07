@@ -54,24 +54,28 @@ for test in range(1, 13):
     FileName = f_list[case[test - 1]-1]
     psspy.case(CasePath + FileName)
     psspy.resq(CasePath + "Tamworth_SMIB.seq")
-    psspy.addmodellibrary(CasePath + 'SMASC_E161_SMAPPC_E130_344_IVF150.dll')
+    psspy.addmodellibrary(CasePath + 'SMASC_E161_SMAPPC_E130_342_IVF150.dll')
     psspy.dyre_new([1, 1, 1, 1], CasePath + "Tamworth_SMIB_E161_E130.dyr", '', '', '')
 
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 28, 5)  # J+27 FRTArGraNom
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 29, 5)
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 30, 5)
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 38, 1.0)  # FRT_VOLFILMOD
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.115)  # HVRT 1-J+30
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.095)  # HVRT 1-J+31
 
-    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.17) #LVRT 1-J+32
-    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.15) #LVRT 1-J+33
-    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 33, 0.17) #LVRT 1-J+32
-    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 34, 0.15) #LVRT 1-J+33
-    # psspy.change_plmod_con(100, r"""1""", r"""SMAPPC130""", 24, 0.87) #FRTThrVolNomMin
-    # psspy.change_plmod_con(100, r"""1""", r"""SMAPPC130""", 26, 1.17) #PPC HVRT
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 38, 0.0)  # FRT_VOLFILMOD
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.185)  # LVRT 1-J+32
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.160)  # LVRT 1-J+33
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 33, 0.15)  # LVRT 1-J+32
-    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 34, 0.13)  # LVRT 1-J+33
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 28, 5)  # J+27 FRTArGraNom
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 29, 5)
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 30, 5)
+    #
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.17) #LVRT 1-J+32
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.15) #LVRT 1-J+33
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 33, 0.17) #LVRT 1-J+32
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 34, 0.15) #LVRT 1-J+33
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMAPPC130""", 24, 0.87) #FRTThrVolNomMin
+    # # psspy.change_plmod_con(100, r"""1""", r"""SMAPPC130""", 26, 1.17) #PPC HVRT
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 38, 0.0)  # FRT_VOLFILMOD
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.185)  # LVRT 1-J+32
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.160)  # LVRT 1-J+33
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 33, 0.15)  # LVRT 1-J+32
+    # psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 34, 0.13)  # LVRT 1-J+33
 
     OutputFilePath = FigurePath + '06. PoC Qref Step Test' + "\\" + 'Test' + str(
         test+30) + '_' + FileName + '_sFac' + str(acceleration) + '_dT' + str(

@@ -60,7 +60,7 @@ Q_factor = 2
 QgenINImax = [15, 30, 0]
 QgenINImin = [0, 0, -30]
 
-SCR_Set = [9.05, 3.0]
+SCR_Set = [9.05, 5.0]
 XR_ratio_Set = [2.24, 10.0]
 Ppoc_Set = [poc_p_max, poc_p_min]
 Qpoc_Set = [0, poc_q, -poc_q]
@@ -82,7 +82,7 @@ VpocALL = np.ones(24)*999
 QpocALL = np.ones(24)*999
 PpocALL = np.ones(24)*999
 
-for caseNum in range(17,24):
+for caseNum in range(0,1):
     ppoc = Ppoc[caseNum]
     scr = SCR[caseNum]
     xrratio = XR_ratio[caseNum]

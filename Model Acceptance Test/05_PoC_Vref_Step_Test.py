@@ -46,7 +46,7 @@ for test in range(1, 13):
     redirect.psse2py()
     psspy.psseinit(50000)
 
-    dVref = 0.1
+    dVref = 0.05
     POC_VCtrl_Tgt = 1.00
     CON_PPCVref = 10
     VAR_PPCVini = 1
@@ -92,6 +92,10 @@ for test in range(1, 13):
     [ierr, var_inv_con] = psspy.mdlind(100, '1', 'GEN', 'CON')
     [ierr, var_inv_var] = psspy.mdlind(100, '1', 'GEN', 'VAR')
     [ierr, var_inv_mod] = psspy.mdlind(100, '1', 'GEN', 'ICON')
+
+    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 38, 0.0)  # FRT_VOLFILMOD
+    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 31, 0.115)  # HVRT 1-J+30
+    psspy.change_plmod_con(100, r"""1""", r"""SMASC161""", 32, 0.095)  # HVRT 1-J+31
 
     psspy.strt_2([0, 0], OutputFilePath)
     J_vals = []
